@@ -56,22 +56,145 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+[id^=flexContainer1] {
+    display: flex;
+    flex-direction:row ;
+    gap: 20px;
+    padding: 0 5px;
+    }
+
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
-
+[id^=flexContainer2] {
+    display: flex;
+    flex-direction: column;
+    gap:  25px;
+    justify-content:center;
+    align-items: center;
+    }
+    
+    .flex-item {
+  margin-right: 10px; 
+    }
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    [id^=flexContainer3] {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: space-between;
+  }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    
+    [id^=flexContainer4] {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0 5px;
+  padding-top: 9.5em;
+ 
+ 
+.flexItem:nth-child(1) {
+  order: 2; 
+}
 
+.flexItem:nth-child(2) {
+  order: 3; 
+}
+
+.flexItem:nth-child(3) {
+  order: 1; 
+}
+}
     /* 👉 Task 5 - [HINT] research align-self */
+    [id^=flexContainer5] {
+  display: flex;
+  padding-top: 2em;
+  padding-left: 0;
+  padding-right: 0 8em;
+}
 
+[id^=flexContainer5] .flexItem:nth-child(1) {
+  align-self: flex-start;
+}
+
+[id^=flexContainer5] .flexItem:nth-child(2) {
+  align-self: center;
+  margin-top: -10px;
+  margin-left: 25px;
+}
+
+[id^=flexContainer5] .flexItem:nth-child(3) {
+ align-self: auto;
+  margin-top:50%;
+  margin-left: -125px;
+}
+     
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    [id^=flexContainer6] {
+  display: flex;
+  padding-top: -15px;
+}
 
+[id^=flexContainer6] .flexItem:nth-child(1) {
+  align-self: flex-end;
+  margin-top:50%;
+  margin-left:90px;
+  margin-right: -50px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+[id^=flexContainer6] .flexItem:nth-child(2) {
+  align-self: center;
+  margin-top: 155px;
+  margin-left: -50px;
+  margin-right: 40px;
+  padding-top: 15px;
+  
+}
+
+[id^=flexContainer6] .flexItem:nth-child(3) {
+  align-self: flex-start;
+  margin-left: -135px;
+}
     /* 👉 Task 7 - [HINT] research flex-grow */
+    [id^=flexContainer7] {
+    display: flex;
+    flex-direction:row ;
+    gap: 2px;
+    padding: 0 0px;
+    }
+[id^=flexContainer7] .flexItem:nth-child(2) {
+  flex-grow:0.4;
+}
 
+[id^=flexContainer7] .flexItem:nth-child(3) {
+  flex-grow:0.6;
+}
     /* 👉 Task 8 - [HINT] you got this! */
+    [id^=flexContainer8] {
+    display: flex;
+    flex-direction:row ;
+    gap: 20px;
+    padding: 0 5px;
+    }
+    [id^=flexContainer8] .flexItem:nth-child(1) {
+ padding-left: 30px;
+}
 
+[id^=flexContainer8] .flexItem:nth-child(2) {
+  margin-top:72px;
+ 
+}
 
+[id^=flexContainer8] .flexItem:nth-child(3) {
+ margin-top: 150px;
+ margin-right:-70px ;
+ padding-right: 30px;
+}
     /*
     👉 Part 2 of 2 👈
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
